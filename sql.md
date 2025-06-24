@@ -2,7 +2,7 @@
 
 [⬅️ Back to Table of Contents](README.md)
 
-### 51. What is the difference between INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN?
+### 72. What is the difference between INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN?
 
 **Answer:** These are different types of SQL JOINs that determine how data is combined from multiple tables:
 
@@ -60,7 +60,7 @@ FULL JOIN Orders o ON c.CustomerID = o.CustomerID;
 -- Returns all customers and all orders
 ```
 
-### 52. What is a primary key and how does it differ from a unique key?
+### 73. What is a primary key and how does it differ from a unique key?
 
 **Answer:** Both primary keys and unique keys enforce uniqueness, but they have different purposes and characteristics:
 
@@ -94,7 +94,7 @@ INSERT INTO Users (UserID, Email) VALUES (2, NULL); -- OK
 INSERT INTO Users (UserID, Email) VALUES (3, NULL); -- OK (NULL values don't violate uniqueness)
 ```
 
-### 53. What are foreign keys and how do they enforce referential integrity?
+### 74. What are foreign keys and how do they enforce referential integrity?
 
 **Answer:** Foreign keys are columns that reference the primary key of another table, establishing relationships between tables and enforcing referential integrity.
 
@@ -135,7 +135,7 @@ CREATE TABLE Employees (
 );
 ```
 
-### 54. Explain normalization and list the different normal forms.
+### 75. Explain normalization and list the different normal forms.
 
 **Answer:** Normalization is a database design technique that organizes data to reduce redundancy and improve data integrity. It involves decomposing tables into smaller, more manageable tables.
 
@@ -205,7 +205,7 @@ CREATE TABLE OrderItems (
 );
 ```
 
-### 55. What is a clustered index vs a non-clustered index?
+### 76. What is a clustered index vs a non-clustered index?
 
 **Answer:** Indexes improve query performance by providing faster data access. There are two main types:
 
@@ -245,7 +245,7 @@ CREATE UNIQUE INDEX IX_Users_Username ON Users(Username);
 - Non-clustered indexes are good for columns used in WHERE clauses
 - Too many indexes can slow down INSERT, UPDATE, and DELETE operations
 
-### 56. What are transactions in SQL and what are ACID properties?
+### 77. What are transactions in SQL and what are ACID properties?
 
 **Answer:** Transactions are groups of SQL statements that are executed as a single unit. They ensure data consistency and integrity.
 
@@ -296,7 +296,7 @@ BEGIN TRANSACTION;
 COMMIT TRANSACTION;
 ```
 
-### 57. What is the difference between DELETE, TRUNCATE, and DROP?
+### 78. What is the difference between DELETE, TRUNCATE, and DROP?
 
 **Answer:** These are different ways to remove data from a database:
 
@@ -339,7 +339,7 @@ DROP TABLE Users; -- Remove entire table
 -- DROP: Removes everything, cannot be rolled back, fastest
 ```
 
-### 58. What are window functions in SQL and when would you use them?
+### 79. What are window functions in SQL and when would you use them?
 
 **Answer:** Window functions perform calculations across a set of rows related to the current row, without grouping the result set.
 
@@ -399,7 +399,7 @@ SELECT
 FROM Sales;
 ```
 
-### 59. How does a Common Table Expression (CTE) work and how is it different from a subquery?
+### 80. How does a Common Table Expression (CTE) work and how is it different from a subquery?
 
 **Answer:** CTEs are temporary named result sets that exist only within the scope of a single SQL statement. They provide better readability and can be referenced multiple times.
 
@@ -465,7 +465,7 @@ WITH EmployeeHierarchy AS (
 SELECT * FROM EmployeeHierarchy;
 ```
 
-### 60. What are the advantages and disadvantages of using stored procedures?
+### 81. What are the advantages and disadvantages of using stored procedures?
 
 **Answer:** Stored procedures are precompiled SQL statements stored in the database.
 

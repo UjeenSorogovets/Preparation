@@ -16,66 +16,23 @@ Modern language features - generic constraints, covariance, records, pattern mat
 ### [Performance and Memory](performance.md) (37-39)
 Performance and memory management - GC generations, memory leaks, boxing/unboxing.
 
-### [SQL](sql.md) (51-60)
+### [SQL](sql.md) (72-81)
 SQL questions - JOINs, keys, normalization, indexes, transactions, window functions, CTEs.
 
-### [Web Development](web-development.md) (61-70)
-Web development - ASP.NET Core, middleware, DI, authentication, Entity Framework, error handling.
+### [Advanced](advanced.md) (21-30)
+Advanced topics - reflection, advanced middleware internals, DI lifetimes, .NET Standard, GC internals, security.
 
----
+### [Async & Concurrency](async-concurrency.md) (40-42)
+Concurrency primitives - ConfigureAwait, asynchronous streams, IAsyncDisposable.
 
-## Remaining Sections (to be added later)
+### [Architecture & Patterns](architecture-patterns.md) (43-45)
+Design patterns and architectural principles - SOLID, Repository + Unit of Work, Clean Architecture.
 
-### Advanced (21-30)
-- Reflection
-- Middleware
-- Dependency Injection
-- .NET Standard
-- .NET Platforms
-- Garbage Collection Optimization
-- Attributes
-- Code Compilation
-- Global Assembly Cache
-- Web Application Security
+### [Framework-Specific](framework-specific.md) (46-58)
+Detailed ASP.NET Core features - MVC, Razor Pages, SignalR, minimal APIs, caching, JWT security, .NET 8 web improvements.
 
-### Async & Concurrency (40-42)
-- ConfigureAwait(false)
-- IAsyncEnumerable<T>
-- IAsyncDisposable
-
-### Architecture & Patterns (43-45)
-- SOLID with DI
-- Repository + Unit of Work
-- Clean Architecture
-
-### Framework-Specific (46-58)
-- MVC Pattern
-- Razor Pages vs MVC
-- Validation
-- SignalR
-- API Versioning
-- IApplicationBuilder
-- Areas
-- Session Management
-- Caching
-- Minimal APIs vs MVC
-- Middleware Order
-- JWT Security
-
-### Testing & Best Practices (59-71)
-- Unit Testing
-- Mocking Dependencies
-- SOLID Principles
-- CI/CD
-- Code Security
-- Performance Issues
-- Repository Pattern
-- Database Migrations
-- Debugging Tools
-- Staying Updated
-- xUnit and Moq
-- WebApplicationFactory
-- dotnet publish
+### [Testing & Best Practices](testing-best-practices.md) (59-71)
+Testing strategies, CI/CD, security, performance, debugging tools, staying current.
 
 ---
 
