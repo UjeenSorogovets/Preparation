@@ -36,6 +36,23 @@ Testing strategies, CI/CD, security, performance, debugging tools, staying curre
 
 ---
 
+## C# 13 Highlights (Preview)
+
+The following questions already cover or reference upcoming C# 13 / .NET 9 features.  
+Make sure you build with the **.NET 9 SDK preview** (`<LangVersion>preview</LangVersion>`) to experiment with the samples.
+
+| Feature | Question |
+|---------|----------|
+| Collection 'params' (`void Foo(params scoped Span<int> items)`) | Q31, Q36 |
+| List / slice patterns with spread `..` | Q34 |
+| Enhanced `var` pattern matching | Q18 |
+| UTF-8 string literals `u8"…"` | Q31 |
+| Source-generated middleware | Q22 |
+| Dynamic PGO always-on & live profile updates | Q37 |
+| Output caching stabilisation | Q55 |
+
+---
+
 ## How to Use
 
 1. Select a section appropriate for the candidate's level

@@ -436,6 +436,15 @@ catch (RuntimeBinderException ex)
 }
 ```
 
+**C# 13 preview – enhanced var pattern**
+```csharp
+if (obj is var { Length: > 0 } s)
+{
+    // 's' is implicitly typed string with Length > 0
+    Console.WriteLine($"non-empty string: {s}");
+}
+```
+
 ### 19. What are async and await keywords in C#?
 
 **Answer:** `async` and `await` are keywords used for asynchronous programming in C#. They allow you to write asynchronous code that looks similar to synchronous code, making it easier to handle long-running operations without blocking the main thread.

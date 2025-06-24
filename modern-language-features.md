@@ -36,6 +36,10 @@ public class Container<T> where T : class, new()
 - `where T : IComparable` - T must implement IComparable
 - `where T : unmanaged` - T must be an unmanaged type
 
+**C# 13 preview additions:**
+- **UTF-8 string literals:** `u8"Hello"` returns a `System.ReadOnlySpan<byte>` at compile time.
+- **Collection params:** you can now declare `void Foo(params scoped Span<int> data)` to pass stack-allocated spans via the `params` keyword.
+
 ### 32. Explain covariance and contravariance in C#.
 
 **Answer:** Variance allows implicit reference-conversion for generic parameters marked out (covariant, read-only position) or in (contravariant, write-only position). For example, IEnumerable<object> can reference an IEnumerable<string> but the reverse is illegal. This relies on runtime type-safety checks performed by the CLR for delegates and interfaces.
@@ -146,6 +150,14 @@ var result = point switch
     (var x, var y) when x > 0 && y > 0 => "First quadrant",
     _ => "Other"
 };
+```
+
+**C# 13 preview – list/slice pattern spread:**
+```csharp
+if (numbers is [1, .. var middle, 10])
+{
+    Console.WriteLine($"Starts with 1 and ends with 10, middle length {middle.Length}");
+}
 ```
 
 ### 35. Describe nullable reference types.

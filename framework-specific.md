@@ -70,7 +70,7 @@ Add `services.AddSession()` and `app.UseSession()`. Data stored in memory or dis
 - **Response caching** (`[ResponseCache]`, `UseResponseCaching`).
 - **In-memory cache** (`IMemoryCache`).
 - **Distributed cache** (`IDistributedCache`, Redis).
-- **Output caching** (ASP.NET Core 8) for full response reuse.
+- **Output caching** (`UseOutputCache`) is fully supported and source-generated in ASP.NET Core 9 for minimal APIs and MVC.
 
 ### 56. Why is middleware order critical?
 
@@ -79,6 +79,8 @@ Because the pipeline is **ordered**. For example, `UseRouting` must come before 
 ### 57. How do you secure an API with JWT in ASP.NET Core?
 
 Add `AddAuthentication().AddJwtBearer(...)`; issue tokens via IdentityServer/Azure AD; protect endpoints with `[Authorize]`. Validate issuer, audience, expiration, signing key.
+
+**.NET 9:** The default JWT middleware supports token replay detection and built-in rate limiting policies.
 
 ### 58. What are the major changes introduced in .NET 8 for web applications?
 

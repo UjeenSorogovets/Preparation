@@ -36,6 +36,8 @@ GC.Collect(); // This will compact the LOH
 - Most objects die young (Gen 0)
 - Long-lived objects eventually reach Gen 2
 
+**.NET 9 update:** Dynamic PGO (profile-guided optimization) is enabled by default and updated live without restarts, further reducing Gen 2 collections by optimizing hot paths.
+
 ### 38. Name typical managed-memory leaks in long-running services.
 
 **Answer:** Unsubscribed event handlers, static caches that outlive requests, misuse of HttpClient singletons with mutable default headers, and neglected IDisposable fields keep references alive and block GC, leading to steadily growing Gen 2/LOH usage.
